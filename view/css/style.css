@@ -1,0 +1,589 @@
+* {
+    box-sizing: border-box;
+    /* ngăn ko cho chèn padding */
+    font-family: 0.7vw;
+}
+
+.boxcenter {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.demo {
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+.header {
+    background-color: black;
+    border: 1px black solid;
+    color: white;
+    /* co giãn theo trình duyệt */
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: black;
+    border: 1px black solid;
+    font-size: 0.8vw;
+    color: white;
+    /* co giãn theo trình duyệt */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 20px;
+    font-size: 1.2vw;
+}
+
+.menu {
+    background-color: black;
+    color: #ccc;
+    border-radius: 5px;
+}
+
+.boxtrai {
+    float: left;
+    width: 74%;
+}
+
+.boxphai {
+    float: left;
+    width: 24%;
+}
+
+.boxtitle {
+    color: #333;
+    padding: 10px;
+    background-color: #ccc;
+    background-image: linear-gradient(to right, #ccc, white);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #CCC;
+}
+
+.boxcontent {
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.boxcontent2 {
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    background-color: #eee;
+
+}
+
+.boxfooter {
+    padding: 10px;
+    background-color: #EEE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+.banner {
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner img {
+    height: 300px;
+}
+
+.boxsp {
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border: 1px #EEE solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.boxsp .img {
+    min-height: 180px;
+    text-align: center;
+}
+
+.img img {
+    height: 160px;
+}
+
+.menu ul {
+
+    padding: 0px 15px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    /* display: inline; */
+    padding: 0px 15px;
+}
+
+.menu ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 0.9vw;
+}
+
+.menu ul li a:hover {
+    color: white;
+  
+
+}
+
+/* box tài khoản */
+
+.formtaikhoan {
+    line-height: 150%;
+
+}
+
+.formtaikhoan ul {
+    line-height: 150%;
+
+}
+
+.formtaikhoan input[type="text"],
+.formtaikhoan input[type="email"],
+.formtaikhoan input[type="password"],
+.frmcontent input[type="text"] {
+    width: 100%;
+    border: 1px #ccc solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formtaikhoan input[type="checkbox"] {
+    border-radius: 5px;
+}
+
+.formtaikhoan input[type="submit"],
+.frmcontent input[type="submit"],
+.formtaikhoan input[type="reset"],
+.frmcontent input[type="reset"],
+.frmcontent input[type="button"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px #ccc solid;
+}
+
+.formtaikhoan input[type="submit"]:hover,
+.frmcontent input[type="submit"]:hover,
+.frmcontent input[type="reset"]:hover,
+.frmcontent input[type="button"]:hover {
+    background-color: #ccc;
+    border: 1px #ccc solid;
+}
+
+.formtaikhoan li a {
+    color: gray;
+    text-decoration: none;
+}
+
+.formtaikhoan li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.formtaikhoan li a {
+    font-size: 0.8rem;
+}
+
+
+/* menu doc */
+.menudoc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menudoc ul li {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px #ccc solid;
+}
+
+.menudoc ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.menudoc ul li:hover {
+    background-color: #ccc;
+}
+
+.searbox input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+}
+
+.top10 img {
+    width: 20%;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+}
+
+.top10 a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.top10 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* header admin */
+
+
+.headeradmin {
+    background-color: #eee;
+    border: 1px #ccc solid;
+    color: #333;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+}
+
+.headeradmin h1 {
+    font-size: 2vw;
+}
+
+.frmtitle {
+    background-color: #eee;
+    border: 1px #ccc solid;
+    color: #333;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+.frmcontent {
+    padding: 20px 0px;
+
+}
+
+.frmdsloai table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #999;
+}
+
+/* css cho các cột của table */
+.frmdsloai table th {
+
+    padding: 20px;
+    background-color: #ccc;
+}
+
+/* .frmdsloai table th:nth-child(2) {
+    width: 30%;
+    background-color: #ccc;
+}
+
+.frmdsloai table th:nth-child(3) {
+    width: 40%;
+    background-color: #ccc;
+}
+
+.frmdsloai table th:nth-child(4) {
+    width: 20%;
+    background-color: #ccc;
+} */
+.frmdsloai table td {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* sản phẩm chi tiết */
+
+.spct {
+    text-align: center;
+}
+
+.spct img {
+    width: 50%;
+}
+
+.thongbao {
+    color: red;
+}
+
+.guibl {
+    background-color: #F8F8F8;
+}
+
+.binhluan {
+    background-color: #F8F8F8;
+}
+
+.binhluan table {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.binhluan table td:nth-child(1) {
+    width: 50%;
+}
+
+.binhluan table td:nth-child(2) {
+    width: 10%;
+}
+
+.binhluan table td:nth-child(3) {
+    width: 30%;
+}
+
+.n1 {
+    color: #007784;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.n2 {
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.n3 input[type="submit"] {
+    background-color: gray;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 25px;
+    transition: 2s;
+}
+
+.n3 input[type="submit"]:hover {
+    background-color: wheat;
+    transition: 2s;
+    color: black;
+}
+
+.n4 {
+    position: absolute;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 10px;
+    background: #007784;
+    color: white;
+    border-radius: 30px;
+
+}
+
+.flex {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.f-1 ul li {
+    list-style-type: none;
+
+}
+
+.f-1 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.f-1 ul li a:hover {
+    text-decoration: underline;
+
+}
+
+.f-2 {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.l-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.form-timkiem input {
+    background-color: black;
+    border: gray solid 1px;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+.boxsp {
+    position: relative;
+}
+
+.boxsp:hover .hd1 {
+    transition: 1s;
+    transform: translateY(-60px);
+    opacity: 1;
+}
+
+.hd1 {
+    transition: 1s;
+    translate: 0;
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    opacity: 0;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #bbb;
+    border-color: white;
+}
+.img-zoom{
+    transition: 3s;
+    position: relative;
+    overflow: hidden;
+}
+.img-zoom:hover img{
+    transition: 3s;
+    transform: scale(1.5,1.5);  
+    overflow: hidden;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view/css/style.css">
+    <script src="https://kit.fontawesome.com/d829d3809c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="boxcenter">
+        <div class="row mb menu">
+            <ul>
+                <li><img src="upload/banner.png" width="70px" alt=""></li>
+                <li><a href="index.php"><strong><i class="fa-solid fa-house"></i> </strong></a></li>
+                <li><a href="index.php?act=gioithieu"><strong>GIỚI THIỆU</strong></a></li>
+                <li><a href="index.php?act=gioithieu"><strong>LIÊN HỆ</strong> </a></li>
+                <li><a href="index.php?act=gioithieu"><strong>GÓP Ý</strong></a></li>
+                <li><a href="index.php?act=gioithieu"><strong>HỎI ĐÁP</strong></a></li>
+                <div class="form-timkiem">
+                    <form action="index.php?act=sanpham" method="post">
+                        <input type="text" name="kyw" placeholder="Tìm kiếm sản phẩm...">
+                        <input type="hidden" name="timkiem" value="Tìm kiếm">
+                    </form>
+                </div>
+            </ul>
+        </div>
+        <div style="width:20%;float:right;" class="row mb">
+         
+        </div>
+      
+            
+            <div class="row mb ">
+                <div class="boxtrai mr">
+                    <div class="row">
+                        <div class="banner mb">
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides fade">
+                                    <div class="numbertext"></div>
+                                    <img src="view/images/sp1.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext"></div>
+                                    <img src="view/images/sp2.png" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                            </div>
+                            <br>
+
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="boxsp ' . $mr . '">
+                            <strong>
+                                <div class="n4">GIẢM GIÁ</div>
+                            </strong>
+                            <div class=" row img"> <a href="' . $linksp . '"><img src="' . $hinh . '" alt=""></a></div>
+                            <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="' . $id . '">
+                                <input type="hidden" name="price" value="' . $price . '">
+                                <input type="hidden" name="img" value="' . $img . '">
+                                <input type="hidden" name="name" value="' . $name . '">
+                                <input class="hd1" type="submit" name="addtocart" value="+">
+
+                                <strong><a class="n1" href="' . $linksp . '">' . $name . '</a></strong>
+                                <strong>
+                                    <p class="n2">' . $price . ' VND</p>
+                                </strong>
+                                <div class="n3" class="row btnaddtocart">
+                                    <form action="index.php?act=addtocart" method="post">
+                                        <input type="hidden" name="id" value="' . $id . '">
+                                        <input type="hidden" name="price" value="' . $price . '">
+                                        <input type="hidden" name="img" value="' . $img . '">
+                                        <input type="hidden" name="name" value="' . $name . '">
+                                        <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                                    </form>
+                                </div>
+                        </div>';
+
+
+                    </div>
+
+                </div>
+                <div class="boxphai">
+                    <div class="boxtitle"><strong>TÀI KHOẢN</strong></div>
+                    <div class="boxcontent formtaikhoan">
+        
+                        <div class="row mb-10">
+                            <strong style="color:black ;">xin chào: </strong>
+                            <span style="font-size:13px; color: gray;">
+                               
+                            </span>
+                        </div>
+                        <div class="row mb-10">
+                            <li>
+                                <a href="index.php?act=mybill"> Đơn hàng của tôi</a>
+                            </li>
+                            <li>
+                                <a href="index.php?act=quenmk">Quên mật khẩu</a>
+                            </li>
+                            <li>
+                                <a href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a>
+                            </li>
+        
+        
+        
+        
+                            <li>
+                                <a href="index.php?act=thoat"><i class="fa-solid fa-share-from-square"></i></a>
+                            </li>
+                        </div>
+        
+        
+                        <form action="index.php?act=dangnhap" method="post">
+                            <div class="row mb-10">
+                                Tên đăng nhập <br>
+                                <input type="text" name="user">
+                            </div>
+                            <div class="row mb-10">
+                                Mật khẩu <br>
+                                <input type="password" name="pass" id="">
+                            </div>
+                            <div class="row mb-10">
+                                <input type="checkbox" name="" id=""><span style="font-size:0.8rem ;">Ghi nhớ tài khoản ?</span>
+                            </div>
+                            <div class="row mb-10">
+                                <input type="submit" value="Đăng nhập" name="dangnhap">
+                            </div>
+        
+                        </form>
+                        <li>
+                            <a href="">Quên mật khẩu</a>
+                        </li>
+        
+                        <li>
+                            <a href="index.php?act=dangky">Đăng ký thành viên</a>
+                        </li>
+        
+                    </div>
+                    <div class="boxtitle"><strong>DANH MỤC</strong></div>
+                    <div class="boxcontent2 menudoc">
+                        <ul>
+        
+        
+                            <li>
+                                <a href="">Đồng Hồ</a>
+                            </li>
+                            <li>
+                                <a href="">LapTop</a>
+                            </li>
+                            <li>
+                                <a href="">Điện thoại</a>
+                            </li>
+                            <li>
+                                <a href="">Balo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="boxtitle"><strong>TOP 10 YÊU THÍCH</strong></div>
+                    <div class="row boxcontent">
+        
+        
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row mb footer">
+                <div class="flex">
+                    <div><img src="upload/banner.png" width="100px" alt=""></div>
+                    <div class="f-1">
+                        <ul>
+                            <li>
+                                <h3>VỀ CHÚNG TÔI</h3>
+                            </li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Thông báo</a></li>
+                        </ul>
+                    </div>
+                    <div class="f-1">
+                        <ul>
+                            <li>
+                                <h3>HƯỚNG DẪN</h3>
+                            </li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Thông báo</a></li>
+                        </ul>
+                    </div>
+                    <div class="f-1">
+                        <ul>
+                            <li>
+                                <h3>CHÍNH SÁCH</h3>
+                            </li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Thông báo</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="f-1">
+
+                        <ul>
+                            <h3 class="m-1 ">Mạng xã hội</h3>
+                            <div class="l-1">
+                                <li><img src="upload/ic1.png" width="28px" alt=""></li>
+                                <li><img src="upload/ic2.png" width="30px" alt=""></li>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- js cho liveshow -->
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+        <!-- end js cho liveshow -->
+</body>
+
+</html>
